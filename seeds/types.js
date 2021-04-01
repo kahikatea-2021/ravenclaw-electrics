@@ -5,9 +5,9 @@ exports.seed = function (knex) {
     .then(function () {
       // Inserts seed entries
       return knex('types').insert([
-        { id: 1, name: 'Entry Range' },
-        { id: 2, name: 'Mid Range' },
-        { id: 3, name: 'High End' }
+        { id: 1, name: 'Entry Range', image: 'images/car1.jpeg' },
+        { id: 2, name: 'Mid Range', image: 'images/car3.jpeg' },
+        { id: 3, name: 'High End', image: 'images/car6.png' }
       ]);
     });
 };

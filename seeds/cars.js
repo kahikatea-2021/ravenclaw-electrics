@@ -11,7 +11,7 @@ exports.seed = function (knex) {
           price: 59990,
           speed: 7.9,
           range: 270,
-          url: 'car1.jpeg',
+          url: 'images/car1.jpeg',
           charge_duration: 7.5,
           type_id: 1,
           description: `Get the best of both worlds with instant acceleration and surprising power alongside an effortless, quiet drive performance — all with zero exhaust emissions. Command the road with every twist and turn, as LEAF’s low centre of gravity ensures ultra-smooth handling. It's a driving experience unlike any other`
@@ -22,7 +22,7 @@ exports.seed = function (knex) {
           price: 48990,
           speed: 8.2,
           range: 263,
-          url: 'car2.jpeg',
+          url: 'images/car2.jpeg',
           charge_duration: 7,
           type_id: 1,
           description: `
@@ -35,7 +35,7 @@ exports.seed = function (knex) {
           price: 77990,
           speed: 7.9,
           range: 449,
-          url: 'car3.jpeg',
+          url: 'images/car3.jpeg',
           charge_duration: 7.5,
           type_id: 2,
           description: `
@@ -48,7 +48,7 @@ exports.seed = function (knex) {
           price: 77990,
           speed: 7.8,
           range: 455,
-          url: 'car4.jpeg',
+          url: 'images/car4.jpeg',
           charge_duration: 10,
           type_id: 2,
           description: `
@@ -61,7 +61,7 @@ exports.seed = function (knex) {
           price: 119990,
           speed: 6.6,
           range: 336,
-          url: 'car5.jpeg',
+          url: 'images/car5.jpeg',
           charge_duration: 9,
           type_id: 3,
           description: `
@@ -74,14 +74,13 @@ exports.seed = function (knex) {
           price: 105000,
           speed: 3.3,
           range: 628,
-          url: 'car6.jpeg',
+          url: 'images/car6.jpeg',
           charge_duration: 8.15,
           type_id: 3,
           description: `
           Model 3 comes with the option of dual motor all-wheel drive, 20” Überturbine Wheels and Performance Brakes and lowered suspension for total control, in all weather conditions. And a carbon fiber spoiler improves stability at high speeds, all allowing Model 3 to accelerate from 0-100 km/h in as little as 3.3 seconds.
           `
         }
-
 
       ]);
     });
