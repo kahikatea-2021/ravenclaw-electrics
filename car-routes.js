@@ -23,8 +23,8 @@ router.get('/', (req, res) => {
 
   })
 
-
-
+  module.exports = router
+  
 //for all routes add .catch at the end 
 
 //   .catch(err => {
