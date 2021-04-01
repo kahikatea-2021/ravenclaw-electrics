@@ -1,12 +1,23 @@
 const express = require('express')
-const utils = require('./utils')
+const types = require('./db/types')
+const cars = require('./db/cars')
 
 const router = express.Router()
 
 //example 
 router.get('/', (req, res) => {
-   b
-    res.render('home', viewData)
+   return types.getTypes()
+   .then(types => {
+       const viewData = {
+           types
+       }
+       console.log(types)
+       res.render('home', viewData)
+   })
+   .catch((Error) => {
+    console.log(Error.message)
+    res.send('it aint working :(')
+  })
   })
 
   router.get('/low/:id', (req, res) => {
