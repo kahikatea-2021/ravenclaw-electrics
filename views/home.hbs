@@ -1,0 +1,20 @@
+<div class="md:container md:mx-auto">
+    <div class="grid grid-cols-12 gap-y-5">
+        <h1 class="col-span-full">Ravenclaw Electrics</h1>
+        <h2>Choose from our range below</h2>
+        {{#each types}}
+        <div class="col-span-full ">
+            <figure class="relative hover:opacity-80">
+                <a href="/views/car-list.hbs">
+                    <img class="w-screen" src={{image}} alt="">
+                </a>
+                <figcaption class="absolute text-5xl -mt-16 text-white px-4 text-center">
+                    <div>
+                        <h1 class="text-center">{{name}}</h1>
+                    </div>
+                    </figcatpion>
+            </figure>
+        </div>
+        {{/each}}
+        </div>
+    </div>
