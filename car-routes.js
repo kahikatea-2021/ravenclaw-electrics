@@ -5,7 +5,8 @@ const router = express.Router()
 
 //example 
 router.get('/', (req, res) => {
-    res.render('home')
+   b
+    res.render('home', viewData)
   })
 
   router.get('/low/:id', (req, res) => {
@@ -24,7 +25,7 @@ router.get('/', (req, res) => {
   })
 
   module.exports = router
-  
+
 //for all routes add .catch at the end 
 
 //   .catch(err => {
