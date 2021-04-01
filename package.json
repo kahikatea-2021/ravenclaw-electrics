@@ -1,0 +1,29 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "handlebars": "^4.7.7",
+    "knex": "^0.95.4",
+    "nodemon": "^2.0.7",
+    "sqlite3": "^5.0.2",
+    "tailwindcss": "^2.0.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kahikatea-2021/ravenclaw-electrics.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kahikatea-2021/ravenclaw-electrics/issues"
+  },
+  "homepage": "https://github.com/kahikatea-2021/ravenclaw-electrics#readme"
+}
