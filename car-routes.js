@@ -1,28 +1,33 @@
 const express = require('express')
-const db = require('./utils')
+const utils = require('./utils')
 
 const router = express.Router()
 
 //example 
 router.get('/', (req, res) => {
-    .then(woble => {
-        res.render('assignments', woble)
-        return null
-      })
-    .catch((Error) => {
-        console.log(Error.message)
-        res.send('it aint working :(')
-      })
+    res.render('home')
   })
 
   router.get('/low/:id', (req, res) => {
+    const id = Number(req.params.id)
 
   })
 
   router.get('/medium/:id', (req, res) => {
+    const id = Number(req.params.id)
 
   })
 
   router.get('/high/:id', (req, res) => {
+    const id = Number(req.params.id)
 
   })
+
+
+
+//for all routes add .catch at the end 
+
+//   .catch(err => {
+//     console.log(err.message)
+//     res.send('Something went wrong')
+//   })
