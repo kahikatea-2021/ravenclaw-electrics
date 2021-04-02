@@ -6,36 +6,41 @@ const router = express.Router()
 
 //example 
 router.get('/', (req, res) => {
-  return types.getTypes()
-    .then(types => {
-      const viewData = {
-        types
-      }
-      console.log(types)
-      res.render('home', viewData)
+   return types.getTypes()
+   .then(types => {
+       const viewData = {
+           types
+       }
+       console.log(types)
+       res.render('home', viewData)
+   })
+   .catch((Error) => {
+    console.log(Error.message)
+    res.send('it aint working :(')
+  })
+  })
+
+  router.get('/types/:id', (req, res) => {
+    const id = Number(req.params.id)
+    return cars.getCarByType(id)
+    .then(cars => {
+        const viewData = {
+            cars
+        }
+        res.render('car-list', viewData)
     })
     .catch((Error) => {
-      console.log(Error.message)
-      res.send('it aint working :(')
-    })
-})
+        console.log(Error.message)
+        res.send('whers you cars mate??')
+      })
+  })c
 
-router.get('/low/:id', (req, res) => {
-  const id = Number(req.params.id)
+  router.get('/car/:id', (req, res) => {
+    const id = Number(req.params.id)
 
-})
+  })
 
-router.get('/medium/:id', (req, res) => {
-  const id = Number(req.params.id)
-
-})
-
-router.get('/high/:id', (req, res) => {
-  const id = Number(req.params.id)
-
-})
-
-module.exports = router
+  module.exports = router
 
 //for all routes add .catch at the end 
 
