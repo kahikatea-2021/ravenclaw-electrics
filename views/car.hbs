@@ -7,7 +7,7 @@
         <div class="col-span-full">
             <figure class="relative hover:opacity-80 col-span-full">
 
-                <img  src=/{{car.url}} alt="">
+                <img src=/{{car.url}} alt="">
             </figure>
         </div>
 
@@ -28,8 +28,16 @@
 
         <div class="text-white">
 
-            <a href="/">Return to Homepage</a>
+            <button class="hover:underline" onclick="goBack()">Return to list</button>
+            <br>
+            <a class="hover:underline" href="/">Return to home page</a>
         </div>
 
     </div>
 </div>
+
+<script>
+    function goBack() {
+        window.history.back()
+    }
+</script>
