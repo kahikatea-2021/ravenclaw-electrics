@@ -83,7 +83,7 @@ exports.seed = function (knex) {
           price: 105000,
           speed: 3.3,
           range: 628,
-          url: 'images/car6.jpeg',
+          url: 'images/car6.png',
           charge_duration: 8.15,
           type_id: 3,
           quantity: 3,
