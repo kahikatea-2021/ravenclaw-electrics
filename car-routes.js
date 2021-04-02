@@ -22,7 +22,7 @@ router.get('/', (req, res) => {
 
 router.get('/low/:id', (req, res) => {
   const id = Number(req.params.id)
-  res.render('car-list')
+
 })
 
 router.get('/medium/:id', (req, res) => {
