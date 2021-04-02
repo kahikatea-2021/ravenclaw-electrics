@@ -1,0 +1,30 @@
+<div class="md:container md:mx-auto">
+    <div class="grid grid-cols-12 gap-y-5 gap-x-5">
+        <h1 class="col-span-full text-white text-9xl text-center">Ravenclaw Electrics</h1>
+
+        <h2 class="col-span-full text-white text-3xl">{{car.name}}</h2>
+
+        <div class="col-span-full">
+            <figure class="relative hover:opacity-80 col-span-full">
+
+                <img src=/{{car.url}} alt="">
+            </figure>
+        </div>
+
+        <div class="col-span-6 text-white">
+
+            <p>{{car.description}}</p>
+        </div>
+        <div class="col-span-6 text-white">
+            <h2 class="underline">Specifications:</h2>
+            <ul>
+                <li>Speed (0-100km/h): {{car.speed}}s</li>
+                <li>Range: {{car.range}} kms</li>
+                <li>Charge time: {{car.charge_duration}} hrs</li>
+                <li>Units Available: {{car.quantity}}</li>
+                <li>Price: ${{car.price}} NZD</li>
+            </ul>
+        </div>
+
+    </div>
+</div>
