@@ -10,7 +10,7 @@ function getCarById(id, db = connection) {
     return db(TABLE_NAME).select().where('id', id).first()
 }
 
-module.export = {
+module.exports = {
     getCarsByType,
     getCarById
 }

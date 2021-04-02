@@ -1,6 +1,6 @@
 const express = require('express')
-const types = require('/db/types')
-const cars = require('/db/cars')
+const types = require('./db/types')
+const cars = require('./db/cars')
 
 const router = express.Router()
 
@@ -37,7 +37,18 @@ router.get('/', (req, res) => {
 
   router.get('/car/:id', (req, res) => {
     const id = Number(req.params.id)
-    return
+    return cars.getCarById(id)
+    .then(car => {
+        const viewData = {
+            car
+        }
+        console.log(viewData);
+        res.render('car', viewData)
+    })
+    .catch((Error) => {
+        console.log(Error.message)
+        res.send('seriously fix yo code boss')
+      })
   })
 
   module.exports = router
