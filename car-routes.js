@@ -1,6 +1,6 @@
 const express = require('express')
-const types = require('./db/types')
-const cars = require('./db/cars')
+const types = require('/db/types')
+const cars = require('/db/cars')
 
 const router = express.Router()
 
@@ -22,7 +22,7 @@ router.get('/', (req, res) => {
 
   router.get('/types/:id', (req, res) => {
     const id = Number(req.params.id)
-    return cars.getCarByType(id)
+    return cars.getCarsByType(id)
     .then(cars => {
         const viewData = {
             cars
@@ -33,11 +33,11 @@ router.get('/', (req, res) => {
         console.log(Error.message)
         res.send('whers you cars mate??')
       })
-  })c
+  })
 
   router.get('/car/:id', (req, res) => {
     const id = Number(req.params.id)
-
+    return
   })
 
   module.exports = router
