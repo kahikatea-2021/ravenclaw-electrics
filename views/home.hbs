@@ -1,14 +1,14 @@
 <div class="md:container md:mx-auto">
     <div class="grid grid-cols-12 gap-y-5">
-        <h1 class="col-span-full text-white text-9xl text-center">Ravenclaw Electrics</h1>
-        <h2 class="col-span-full text-white text-3xl">Choose from our range below:</h2>
+        <h1 class="col-span-full text-white md:text-9xl text-center">Ravenclaw Electrics</h1>
+        <h2 class="col-span-full text-white md:text-3xl">Choose from our range below:</h2>
         {{#each types}}
         <div class="col-span-full ">
             <figure class="relative hover:opacity-80">
                 <a href="/types/{{id}}">
                     <img class="w-screen" src={{image}} alt="">
                 </a>
-                <figcaption class="absolute text-3xl -mt-16 text-white px-4 text-center">
+                <figcaption class="absolute md:text-3xl -mt-16 text-white px-4 text-center">
                     <div>
                         <h1 class="text-center">{{name}}</h1>
                     </div>
