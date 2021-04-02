@@ -20,19 +20,24 @@ router.get('/', (req, res) => {
   })
   })
 
-  router.get('/low/:id', (req, res) => {
+  router.get('/types/:id', (req, res) => {
     const id = Number(req.params.id)
-
+    return cars.getCarByType(id)
+    .then(cars => {
+        const viewData = {
+            cars
+        }
+        res.render('car-list', viewData)
+    })
+    .catch((Error) => {
+        console.log(Error.message)
+        res.send('whers you cars mate??')
+      })
   })
 
-  router.get('/medium/:id', (req, res) => {
+  router.get('/car/:id', (req, res) => {
     const id = Number(req.params.id)
-
-  })
-
-  router.get('/high/:id', (req, res) => {
-    const id = Number(req.params.id)
-
+    
   })
 
   module.exports = router
